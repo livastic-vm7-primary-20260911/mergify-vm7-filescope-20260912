@@ -1,0 +1,13 @@
+scopes:
+  source:
+    files:
+      shared:
+        include:
+          - components/**
+
+queue_rules:
+  - name: default
+    queue_conditions:
+      - check-success = integration
+    merge_conditions:
+      - check-success = integration
