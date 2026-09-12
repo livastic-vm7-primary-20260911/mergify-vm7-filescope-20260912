@@ -11,3 +11,6 @@ queue_rules:
       - check-success = integration
     merge_conditions:
       - check-success = integration
+
+merge_queue:
+  mode: parallel
